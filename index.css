@@ -1,0 +1,117 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column; /* Isso vai garantir que a div e a tabela fiquem em colunas */
+}
+
+/* Estilo do formulário */
+.bora {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Distância entre o formulário e a tabela */
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da tabela */
+table {
+    width: 400px;
+    margin-top: 20px; /* Distância entre o formulário e a tabela */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Adicionando um estilo para os botões Editar e Deletar */
+button {
+    margin: 5px; /* Espaço entre os botões */
+    padding: 8px 12px; /* Ajustando o padding para um tamanho adequado */
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo específico para os botões de Editar e Deletar dentro da tabela */
+.td-buttons {
+    display: flex; /* Flexbox para alinhar os botões lado a lado */
+    justify-content: space-between; /* Alinha os botões com espaçamento igual entre eles */
+    width: 150px; /* Definindo uma largura fixa para a célula de botões */
+}
+
+button.edit {
+    background-color: #28a745; /* Cor verde para o botão Editar */
+    color: white;
+}
+
+button.delete {
+    background-color: #dc3545; /* Cor vermelha para o botão Deletar */
+    color: white;
+}
