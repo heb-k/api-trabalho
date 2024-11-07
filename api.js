@@ -21,7 +21,7 @@ function criar(){
     let inputnome = document.getElementById('inputnome');
     let inputnumero = document.getElementById('inputnumero');
     let inputcpf = document.getElementById('inputcpf');
-    if(inputnome.value==""|| inputnumero.value==""){
+    if(inputnome.value==""|| inputnumero.value==""|| inputcpf.value==""){
         alert("Insira os dados do cliente")
         return
     }
